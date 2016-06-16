@@ -1,7 +1,7 @@
 ﻿/***************************************************************
- * Description : 
- * Auteur      : Sébastien Geiser
- * Création    : Avril 2014
+ * Author      : Sébastien Geiser
+ * Creation    : Avril 2014
+ * Licence	   : MIT
  ***************************************************************/
 
 using System;

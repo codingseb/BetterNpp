@@ -353,7 +353,7 @@ namespace BetterNpp
 		public static void AddSelection(int start, int end)
 		{
 			string allText = Text;
-			            int startToUse = start;
+			int startToUse = start;
             int endToUse = end;
 
             if(start < 0)
@@ -533,6 +533,24 @@ namespace BetterNpp
 
             return result;
         }
+		
+        /// <summary>
+        /// Récupère le texte de la ligne spécifiée
+        /// </summary>
+        /// <param name="lineNb">Numéro de la ligne dont on veut récupérer le texte</param>
+        /// <returns>Le texte de la ligne spécifiée</returns>
+		public static string GetLineText(int lineNb)
+		{
+			string result = "";
+			
+			try
+			{
+				result = BNpp.Text.Split(new string[] {"\r\n", "\r", "\n"}, StringSplitOptions.None)[lineNb - 1];
+			}
+			catch {}
+			
+			return result;
+		}
 
         #endregion
 
